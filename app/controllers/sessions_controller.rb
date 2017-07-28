@@ -68,6 +68,7 @@ class SessionsController < ApplicationController
 		redirect_to "/#{@user.username}"
 	end
 	def user_guide
+		@user = User.find(session[:user_id])
 	end
 	def privacy_policy
 	end
