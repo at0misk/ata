@@ -77,7 +77,7 @@
         <p>Budget: <%= @budget %></p>
         <p>What resort/hotel star rating do you prefer?</p>
           <ul>
-        <% @star_options %>
+        <% if @star_options %>
           <% @star_options.each do |val| %>
           <li><%= val %></li>
           <% end %>
