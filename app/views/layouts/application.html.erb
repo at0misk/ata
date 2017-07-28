@@ -3,9 +3,9 @@
   <head>
     <% if session[:page_user_id] %>
     <% @page_user = User.find(session[:page_user_id]) %>
-      <title>Evolution Travel - <%= @page_user.first %> <%= @page_user.last %></title>
+      <title>Archer Travel - <%= @page_user.first %> <%= @page_user.last %></title>
     <% else %>
-      <title>Evolution Travel</title>
+      <title>Archer Travel</title>
     <% end %>
     <%= csrf_meta_tags %>
 
