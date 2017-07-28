@@ -560,7 +560,7 @@ small{
 				</div>
 				<input name="other-include" type="text" id="other-quote" placeholder="Other"/>
                 <h3 class="fs-subtitle sub-sub sub-label">What is your trip budget? (per day)</h3>
-				    <select id="budget" name="budget" required>
+				    <select id="budget" name="budget">
 				      <option>$0 - $149</option>
 				      <option>$150 - $199</option>
 				      <option>$200 - $249</option>
@@ -706,7 +706,7 @@ small{
 				<h3 class="fs-subtitle sub-sub sub-label">Are we missing anything?  What else would you like us to know about your party, budget, and/or travel preferences?</h3>
 				<textarea name="comments" rows="6"></textarea>
 				<h3 class="fs-subtitle sub-sub sub-label">I prefer to be contacted by</h3>
-				<select id="budget" name="contact_preference" required>
+				<select id="budget" name="contact_preference">
 				      <option>Email</option>
 				      <option>Phone</option>
 				      <option>Either</option>
@@ -912,10 +912,6 @@ $(".previous").click(function(){
 		easing: 'easeInOutBack'
 	});
 });
-
-$(".submit").click(function(){
-
-})
 
 	    $('#quote-form').validate({
 		      rules: {
