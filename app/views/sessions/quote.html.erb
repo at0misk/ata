@@ -329,7 +329,7 @@ small{
 			</div>
 			<div class="row form-row">
 				<div class="form-group col-sm-12">
-				    <input name="departure" type="text" id="departure" placeholder="When are you traveling?" required/>
+				    <input name="departure" type="text" id="departure" placeholder="When do you plan on traveling?" required/>
 				</div>
 			</div>
 			<div class="row form-row">
@@ -750,7 +750,7 @@ var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
 
 $('#first-next').click(function(){
-	if( !$('#first-quote').val() || !$('#last-quote').val() || !$('#email-quote').val() || !$('#phone-quote').val() || !$('#departure').val() || !$('#return').val()){
+	if( !$('#first-quote').val() || !$('#last-quote').val() || !$('#email-quote').val() || !$('#phone-quote').val() || !$('#departure').val(){
 		 $('.req-errors').text("Please fill out all of the above fields")
 		 $('fieldset').effect("shake");
 	}
