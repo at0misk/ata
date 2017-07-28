@@ -308,7 +308,7 @@ skip_before_action :verify_authenticity_token
 		    end
 		else
 		end
-		    redirect_to "/#{@user.username}"
+		    redirect_to "/#{@user.username}/edit"
 	end
 	def destroy
 		@user = User.find_by_username(params['username'])
@@ -454,7 +454,7 @@ skip_before_action :verify_authenticity_token
 	    end
 		# else
 		# end
-		redirect_to "/#{@user.username}/edit"
+		redirect_to "/#{@user.username}"
 	end
 	def admins_destroy_user
 		@admin_user = User.find(session[:user_id])
