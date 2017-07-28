@@ -65,7 +65,7 @@
         <h3 tyle="padding: 15px 0px; background-color: white; color: #022344; margin: 0px -15px; margin-top: -15px; padding-left: 15px;">Booking/Party Details:</h3>
         <p>What would you like included in your booking?</p>
           <ul>
-        <% @include_option %>
+        <% if @include_option %>
           <% @include_options.each do |val| %>
           <li><%= val %></li>
           <% end %>
