@@ -18,7 +18,7 @@
         <p>Return: <%= @return_date %></p>
         <p>Dates flexible: <% if @flexible %>Yes<% else %>No<% end %></p>
         <h3 tyle="padding: 15px 0px; background-color: white; color: #022344; margin: 0px -15px; margin-top: -15px; padding-left: 15px;">Location Details:</h3>
-        <% if @explore_options || @explore_other %>
+        <% if @explore_options || @explore_other != '' %>
         <p>Where would you like to explore?</p>
         <% end %>
           <ul>
@@ -31,7 +31,7 @@
           <li><%= @explore_other %></li>
           <% end %>
           </ul>
-        <% if @vibe_options || @vibe_other %>
+        <% if @vibe_options || @vibe_other != '' %>
           <p>What kind of vibe are you looking for?</p>
         <% end %>
           <ul>
@@ -40,11 +40,11 @@
           <li><%= val %></li>
           <% end %>
         <% end %>
-          <% if @vibe_other %>
+          <% if @vibe_other != '' %>
           <li><%= @vibe_other %></li>
           <% end %>
           </ul>
-        <% if @activity_options || @activity_other %>
+        <% if @activity_options || @activity_other != '' %>
           <p>What activities are you interested in?</p>
         <% end %>
           <ul>
@@ -53,11 +53,11 @@
           <li><%= val %></li>
           <% end %>
         <% end %>
-          <% if @activity_other %>
+          <% if @activity_other != '' %>
           <li><%= @activity_other %></li>
           <% end %>
           </ul>
-        <% if @view_options || @view_other %>
+        <% if @view_options || @view_other != '' %>
           <p>View or Cabin Preference?</p>
         <% end %>
           <ul>
@@ -66,7 +66,7 @@
           <li><%= val %></li>
           <% end %>
         <% end %>
-          <% if @view_other %>
+          <% if @view_other !='' %>
           <li><%= @view_other %></li>
           <% end %>
           </ul>
@@ -80,7 +80,7 @@
           <li><%= val %></li>
           <% end %>
         <% end %>
-          <% if @include_other %>
+          <% if @include_other != '' %>
           <li><%= @include_other %></li>
           <% end %>
           </ul>
@@ -97,7 +97,7 @@
           <% end %>
         <% end %>
           </ul>
-        <% if @rentalcar_options || @rentalcar_other %>
+        <% if @rentalcar_options || @rentalcar_other != '' %>
           <p>If applicable, what size car rental will you need?</p>
         <% end %>
          <ul>
@@ -106,7 +106,7 @@
           <li><%= val %></li>
           <% end %>
         <% end %>
-          <% if @rentalcar_other %>
+          <% if @rentalcar_other != '' %>
           <li><%= @rentalcar_other %></li>
           <% end %>
           </ul>
@@ -123,7 +123,7 @@
           <% end %>
         <% end %>
           </ul>
-        <% if @occasion_options || @occasion_other %>
+        <% if @occasion_options || @occasion_other != '' %>
           <p>Traveling for an occasion?:</p>
         <% end %>
           <ul>
@@ -132,7 +132,7 @@
           <li><%= val %></li>
           <% end %>
         <% end %>
-          <% if @occasion_other %>
+          <% if @occasion_other != '' %>
           <li><%= @occasion_other %></li>
           <% end %>
           </ul>
