@@ -328,14 +328,9 @@ small{
 				</div>
 			</div>
 			<div class="row form-row">
-				<div class="form-group col-sm-6">
-				    <label for="departure" class="control-label date-label">Travel Dates Available (From)</label>
-				    <input name="departure" type="date" id="departure" min="<%= Date.today %>" required/>
+				<div class="form-group col-sm-12">
+				    <input name="departure" type="text" id="departure" placeholder="When are you traveling?" required/>
 				</div>
-			    <div class="form-group col-sm-6">
-				    <label for="return" class="control-label date-label">To</label>
-			        <input name="return" type="date" id="return" min="<%= Date.today %>" required/>
-			    </div>
 			</div>
 			<div class="row form-row">
 				<div class="form-group col-sm-12 check-group">
@@ -912,23 +907,6 @@ $(".previous").click(function(){
 		easing: 'easeInOutBack'
 	});
 });
-
-	    $('#quote-form').validate({
-		      rules: {
-		        'phone': {
-		          digits: true
-		        },
-		        'email': {
-		        	email: true
-		        }
-		      },
-	          highlight: function (element) {
-	              $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
-	          },
-	          success: function (element) {
-	              element.closest('.form-group').removeClass('has-error').addClass('has-success');
-	          }
-		 });
 
   });
 

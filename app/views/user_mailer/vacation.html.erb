@@ -14,8 +14,7 @@
         <p style="margin-top: 15px;">Name: <%= @first %> <%= @last %></p>
         <p>Email: <a href="mailto:<%= @email %>"><%= @email %></a></p>
         <p>Phone Number: <%= @number %></p>
-        <p>Depart: <%= @depart_date %></p>
-        <p>Return: <%= @return_date %></p>
+        <p>When are you traveling?: <%= @depart_date %></p>
         <p>Dates flexible: <% if @flexible %>Yes<% else %>No<% end %></p>
         <h3 tyle="padding: 15px 0px; background-color: white; color: #022344; margin: 0px -15px; margin-top: -15px; padding-left: 15px;">Location Details:</h3>
         <% if @explore_options || @explore_other != '' %>

@@ -14,13 +14,12 @@ class UserMailer < ApplicationMailer
   	mail(to: @user.email, subject: "#{first} #{last} sent you a message!")
   end
 
-  def vacation(user, first, last, email, phone, departure, return_date, flexible, explore_options, other_explore, vibe_options, other_vibe, activity_options, other_activity, view_options, other_view, include_options, other_include, budget, star_options, rentalcar_options, other_rentalcar, party_size, traveler_type_options, occasion_options, other_occasion, comments, contact_preference)
+  def vacation(user, first, last, email, phone, departure, flexible, explore_options, other_explore, vibe_options, other_vibe, activity_options, other_activity, view_options, other_view, include_options, other_include, budget, star_options, rentalcar_options, other_rentalcar, party_size, traveler_type_options, occasion_options, other_occasion, comments, contact_preference)
   	@user = user
   	@first = first
   	@email = email
     @phone = phone
     @depart_date = departure
-    @return_date = return_date
     @flexible = flexible
     @explore_options = explore_options
     @explore_other = other_explore
