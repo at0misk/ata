@@ -750,7 +750,7 @@ var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
 
 $('#first-next').click(function(){
-	if( !$('#first-quote').val() || !$('#last-quote').val() || !$('#email-quote').val() || !$('#phone-quote').val() || !$('#departure').val(){
+	if( !$('#first-quote').val() || !$('#last-quote').val() || !$('#email-quote').val() || !$('#phone-quote').val() || !$('#departure').val()){
 		 $('.req-errors').text("Please fill out all of the above fields")
 		 $('fieldset').effect("shake");
 	}
