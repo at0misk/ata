@@ -110,7 +110,7 @@
           <li><%= @rentalcar_other %></li>
           <% end %>
           </ul>
-        <% if @party_size %>
+        <% if @party_size != '' %>
           <p>Party Size: <%= @party_size %></p>
         <% end %>
         <% if @traveler_type_options %>
@@ -136,10 +136,10 @@
           <li><%= @occasion_other %></li>
           <% end %>
           </ul>
-        <% if @contact_preference %>
+        <% if @contact_preference != '' %>
           <p>Contact Preference: <%= @contact_preference %></p>
         <% end %>
-        <% if @comments %>
+        <% if @comments != '' %>
           <p>Comments: <%= @comments %></p>
         <% end %>
       </td>
